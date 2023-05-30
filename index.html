@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alarm Clock</title>
+  <link rel="icon" type="image/png" href="favicon.jpg">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="loader loader-alarm">
+      <img src="al.gif" alt="Loader Alarm GIF">
+    </div>
+  <div class="container">
+    <h1>Alarm Clock</h1>
+    <div class="clock">
+      <h2 id="clockTime"></h2>
+    </div>
+    <div class="form-group alarmHour ">
+      <label for="alarmHour">hour:</label>
+      <input type="number" id="alarmHour" class="form-control" min="1" max="12">
+    </div>
+    <div class="form-group alarmMinute ">
+      <label for="alarmMinute">Minute:</label>
+      <input type="number" id="alarmMinute" class="form-control" min="0" max="59">
+    </div>
+    <div class="form-group alarmSecond">
+      <label for="alarmSecond alarmSecond">Second:</label>
+      <input type="number" id="alarmSecond" class="form-control" min="0" max="59">
+    </div>
+    <div class="form-group alarmPeriod ">
+      <label for="alarmPeriod">AM/PM:</label>
+      <select id="alarmPeriod" class="form-control">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+    </div>
+    <div>
+      <button id="setAlarmBtn" class="btn btn-primary">Set Alarm</button>
+    </div>
+    <h4>Alarms</h4>
+    <div id="alarmsList">
+      
+      <ul id="alarmsUl"></ul>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
